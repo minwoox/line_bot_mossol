@@ -19,6 +19,7 @@ public final class MossolUtil {
             return request;
         } catch (Exception e) {
             logger.debug("[ERROR] Converting to object failed. Received Json String <{}>", jsonString);
+            logger.debug("[ERROR] Test <{}>", jsonString);
             return null;
         }
     }
